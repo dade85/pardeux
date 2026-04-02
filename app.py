@@ -24,18 +24,11 @@ APP_DIR = Path(__file__).resolve().parent
 ASSETS_DIR = APP_DIR / "assets"
 DATA_DIR = APP_DIR / "data"
 LOGO_PATH = ASSETS_DIR / "pardeux_wordmark.png"
-FALLBACK_LOGO_PATH = BASE_DIR / "pardeux_wordmark.png"
 DEMO_CATALOG_PATH = DATA_DIR / "demo_catalog.csv"
 
 
 def resolve_logo():
-    if USER_LOGO_PATH.exists():
-        return USER_LOGO_PATH
-    if FALLBACK_LOGO_PATH.exists():
-        return FALLBACK_LOGO_PATH
-    return None
 
-LOGO_PATH = resolve_logo()
 
 BORDEAUX = "#6E1F34"
 BORDEAUX_DARK = "#41111F"
