@@ -27,8 +27,6 @@ LOGO_PATH = ASSETS_DIR / "pardeux_wordmark.png"
 DEMO_CATALOG_PATH = DATA_DIR / "demo_catalog.csv"
 
 
-def resolve_logo():
-
 
 BORDEAUX = "#6E1F34"
 BORDEAUX_DARK = "#41111F"
