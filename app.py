@@ -623,7 +623,7 @@ Style the person according to this wardrobe request: {user_prompt.strip() or sty
 Lifestyle context: {lifestyle or 'premium city lifestyle'}.
 Body and fit notes: {body_notes or 'keep the proportions realistic and flattering'}.
 Use {bag_count}. Each selected bag must visually match the real product reference and remain the focal luxury accessory.
-Do not alter the face into another person. Keep the output elegant, believable, chic, high-fashion, and premium boutique quality.
+Do not alter the face into another person. Keep the output elegant, believable, , high-fashion, and premium boutique quality.
 The bag reference details are:
 {product_blocks}
 Background should feel refined, minimal, and premium. The result should look like a polished editorial still for a luxury vintage boutique.
@@ -823,7 +823,7 @@ def sidebar(catalog: pd.DataFrame) -> Dict[str, Any]:
         )
         style_prompt = st.text_area(
             "Desired outfit / styling prompt",
-            value="Chic bordeaux-toned quiet luxury outfit with refined tailoring and understated jewelry",
+            value=" bordeaux-toned quiet luxury outfit with refined tailoring and understated jewelry",
             height=110,
         )
         body_notes = st.text_input("Shape / size notes", value="Keep the wearer realistic, elegant, and proportionate")
@@ -926,7 +926,7 @@ def hero(selected_df: pd.DataFrame, lifestyle: str) -> None:
     brands = ", ".join(sorted(selected_df["brand"].unique())) if count else "PAR DEUX stock"
     title = "PAR DEUX AI Luxury Advisor & Try-On Studio"
     body = (
-        f"A highly chic Streamlit experience that lets a client select {count or 'their'} bag(s) from live luxury stock, receive commercial and investment-grade advisory, and request a photorealistic rendering of themselves with the chosen bag and outfit concept."
+        f"A highly chic experience that lets a client select {count or 'their'} bag(s) from live luxury stock, receive commercial and investment-grade advisory, and request a photorealistic rendering of themselves with the chosen bag and outfit concept."
         f" The current selection spans {brands} and is configured for a {lifestyle.lower()} journey."
     )
     st.markdown(
