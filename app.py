@@ -21,8 +21,10 @@ except Exception:
     OpenAI = None
 
 APP_DIR = Path(__file__).resolve().parent
-LOGO_PATH = APP_DIR / "pardeux_wordmark.png"
-DEMO_CATALOG_PATH = APP_DIR / "demo_catalog.csv"
+ASSETS_DIR = APP_DIR / "assets"
+DATA_DIR = APP_DIR / "data"
+LOGO_PATH = ASSETS_DIR / "pardeux_wordmark.png"
+DEMO_CATALOG_PATH = DATA_DIR / "demo_catalog.csv"
 
 
 
