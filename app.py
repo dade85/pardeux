@@ -24,6 +24,7 @@ APP_DIR = Path(__file__).resolve().parent
 ASSETS_DIR = APP_DIR / "assets"
 DATA_DIR = APP_DIR / "data"
 LOGO_PATH = ASSETS_DIR / "pardeux_wordmark.png"
+FALLBACK_LOGO_PATH = BASE_DIR / "pardeux_wordmark.png"
 DEMO_CATALOG_PATH = DATA_DIR / "demo_catalog.csv"
 
 BORDEAUX = "#6E1F34"
