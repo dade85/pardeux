@@ -26,11 +26,6 @@ DATA_DIR = APP_DIR / "data"
 LOGO_PATH = ASSETS_DIR / "pardeux_wordmark.png"
 DEMO_CATALOG_PATH = DATA_DIR / "demo_catalog.csv"
 
-if LOGO_PATH.exists():
-    logo = Image.open(LOGO_PATH)
-    st.image(logo, width=420)
-else:
-    st.error(f"Logo not found: {LOGO_PATH}")
 
 
 
